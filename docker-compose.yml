@@ -1,0 +1,13 @@
+services:
+  hh_db:
+   container_name: hh_db
+   ports:
+     - 5432:5432
+   environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=root
+   image: postgres:14.15-alpine
+   
+
+
+  
